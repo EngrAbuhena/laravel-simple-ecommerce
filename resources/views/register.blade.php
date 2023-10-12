@@ -4,7 +4,7 @@
     <div class="container custom-login">
         <div class="row">
             <div class="col-sm-4 offset-4">
-                <form action="register" method="POST">
+                <form action="/register" method="POST">
                     @csrf
                     <div class="row mb-3">
                         <label for="inputName3" class="col-sm-3 col-form-label">Name</label>

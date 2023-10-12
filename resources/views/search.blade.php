@@ -1,11 +1,11 @@
 @extends('master')
 @section('content')
-    <div class="custom-product">
+    <div style="height: auto;">
         <div class="col-sm-4">
             <a href="#">Filter</a>
         </div>
         <div class="col-sm-4">
-            <div class="trending-wrapper">
+            <div class="trending-wrapper" style="margin: 30px;>
                 <h4>
                     Result for Products
                 </h4>
