@@ -26,7 +26,7 @@
 
 
 ## Registration (http://127.0.0.1:8000/register)
-![registerapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/photos/1.register.png?raw=true)
+![registerapi](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/1.register.png?raw=true)
 
 ## Login (http://127.0.0.1:8000/login)
 ![loginapi](https://github.com/EngrAbuhena/simple-api-with-sanctum-auth/blob/photos/login.PNG?raw=true)
