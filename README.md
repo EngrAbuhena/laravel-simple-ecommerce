@@ -2,27 +2,40 @@
 
 <p>This is a Laravel Simple Basic Ecommerce project without multiAuth</p>
 
+## Features
+#### Home page showing all products
+#### Registration
+#### Login
+#### Showing user name when logged in
+#### Session
+#### Logout
+#### Add to cart
+#### Display all cart items of the user
+#### Remove items from cart
+#### Order
+#### Display user's all orders
+#### Bootstrap 4
+
 
 ## Authentication Routes
+#### Register - post :: http://127.0.0.1:8000/register
+#### Login - post :: http://127.0.0.1:8000/login
+#### Logout - get :: http://127.0.0.1:8000/logout
 
-### Register Page - http://127.0.0.1:8000/register
-
-### Login Page - http://127.0.0.1:8000/login
-
-### Home Page - http://127.0.0.1:8000/
-
+## View Routes
+#### Register - view :: http://127.0.0.1:8000/register
+#### Login - view :: http://127.0.0.1:8000/login
 
 ## Product Routes
-
-### GET - http://127.0.0.1:8000/api/v1/products
-
-### GET - http://127.0.0.1:8000/api/v1/products/{product}
-
-### POST - http://127.0.0.1:8000/api/v1/products
-
-### PUT/PATCH - http://127.0.0.1:8000/api/v1/products/{product}
-
-### DELETE - http://127.0.0.1:8000/api/v1/products/{product}
+#### Home page - get :: http://127.0.0.1:8000/
+#### Product Detail Page - get :: http://127.0.0.1:8000/detail/{id}
+#### Search Page - get :: http://127.0.0.1:8000/search
+#### AddToCart - post :: http://127.0.0.1:8000/add-to-cart
+#### CartList Page - get :: http://127.0.0.1:8000/cart-list
+#### RemoveFromCart - get :: http://127.0.0.1:8000/remove-cart/{id}
+#### OrderNow Page - get :: http://127.0.0.1:8000/order-now
+#### PlaceOrder Page - post :: http://127.0.0.1:8000/place-order
+#### MyOrdersPage - get :: http://127.0.0.1:8000/orders
 
 # Home Page without login (http://127.0.0.1:8000)
 ![home](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/0.home-page.png?raw=true)
@@ -36,7 +49,32 @@
 ## Login (http://127.0.0.1:8000/login)
 ![loginapi](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/3.login.png?raw=true)
 
+## Home Page After Logged in (http://127.0.0.1:8000/)
+![homeloggedin](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/4.home-page-loggedin.png?raw=true)
 
+## Product Details Page (http://127.0.0.1:8000/detail/{id})
+![singleproduct](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/5.product-page.png?raw=true)
+
+## Cart List Page (http://127.0.0.1:8000/cart-list)
+![cartlist](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/6.cart-list.png?raw=true)
+
+## "carts" Table (from database)
+![carttable](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/6.1.cart-list-database.png?raw=true)
+
+## Order Now Page (http://127.0.0.1:8000/order-now)
+![ordernow](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/7.order-now-page.png?raw=true)
+
+## MyOrders Page (http://127.0.0.1:8000/orders)
+![myorders](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/9.myorders-page.png?raw=true)
+
+## "orders" Table (from database)
+![myorderstable](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/10.myorders-database.png?raw=true)
+
+## "cart" Table After Placing Order (from database)
+![carttableafterorder](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/11.after-order-cart-table.png?raw=true)
+
+## Search Page (http://127.0.0.1:8000/search)
+![searchpage](https://github.com/EngrAbuhena/laravel-simple-ecommerce/blob/photos/photos/8.search-page.png?raw=true)
 
 ## Security Vulnerabilities
 
