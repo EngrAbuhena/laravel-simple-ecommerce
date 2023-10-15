@@ -1,6 +1,16 @@
 @extends('master')
 @section('content')
 
+    @if ($message = Session::get('success'))
+        <div class="alert alert-success">
+            <p style="text-align: center">{{ $message }}</p>
+        </div>
+    @endif
+    @if ($message = Session::get('error'))
+        <div class="alert alert-danger">
+            <p style="text-align: center">{{ $message }}</p>
+        </div>
+    @endif
     <div class="container custom-login">
         <div class="row">
             <div class="col-sm-4 offset-4">

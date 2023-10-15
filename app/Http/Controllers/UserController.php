@@ -14,11 +14,11 @@ class UserController extends Controller
         $user= User::where(['email'=>$request->email])->first();
         if(!$user || !Hash::check($request->password,$user->password))
         {
-            return "Username or password is not matched";
+            return redirect('/login')->with('error','Username or Password is mismatched.');
         }
         else{
             $request->session()->put('user',$user);
-            return redirect('/');
+            return redirect('/')->with('success','You are successfully logged in.');
         }
     }
 
@@ -29,6 +29,12 @@ class UserController extends Controller
         $user->email=$request->input('email');
         $user->password=$request->input('password');
         $user->save();
-        return redirect('/login');
+        return redirect('/login')->with('success','You are successfully registered.');
+    }
+
+    public function logout(Request $request): RedirectResponse
+    {
+        session()->forget('user');
+        return redirect('login')->with('success','You are successfully logged out.');
     }
 }
